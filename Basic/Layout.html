@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Stylish&display=swap');
+        :root {
+            --colour1 : rgb(34, 40, 49);
+            --colour2 : rgb(57, 62, 70);
+            --colour3 : rgb(0, 173, 181);
+            --colour4 : rgb(238, 238, 238);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            padding: 1vh;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 1.5vw;
+            position: fixed;
+            right: 0;
+        }
+        nav ul li {
+            display: inline;
+            padding: 2vw 2vw;
+        }
+        a {
+            text-decoration: none;
+            color: var(--colour4);
+            font-weight: bold;
+            font-size: smaller;
+            font-family: 'Poppins', serif ;
+        }
+        .outerBox {
+            background-color: black;
+        }
+        .mainImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        .logo {
+            position: fixed;
+            height: 10vh;
+            bottom: 1vh;
+            right: 1vw;
+        }
+        .box1 {
+            color: var(--colour4);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 50vh;
+            width: 33vw;
+            left: 10vw;
+            top: 25vh;
+            text-align: center;
+            font-size: 5vw;
+            position: absolute;
+        }
+        .box2 {
+            color: var(--colour4);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 50vh;
+            width: 33vw;
+            right: 10vw;
+            font-size: 3.5vw;
+            top: 25vh;
+            text-align: center;
+            position: absolute;
+        }
+        .footer {
+            background-color: var(--colour1);
+            color: var(--colour3);
+            text-align: center;
+            padding: 5vh;
+            font-size: 2vw;
+            font-family: 'Poppins', serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a target="_blank" href="https://www.lamborghini.com/">HOME</a></li>
+            <li><a target="_blank" href="https://www.lamborghini.com/">ABOUT</a></li>
+            <li><a target="_blank" href="https://www.lamborghini.com/">SERVICES</a></li>
+            <li><a target="_blank" href="https://www.lamborghini.com/">CARS</a></li>
+            <li><a target="_blank" href="https://www.lamborghini.com/">STORES</a></li>
+            <li><a target="_blank" href="https://www.lamborghini.com/">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="outerBox">
+        <img class="mainImg" src="https://images.unsplash.com/photo-1580654712603-eb43273aff33?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMGNhcnxlbnwwfHwwfHx8MA%3D%3D" alt="images">
+        <div class="box1">
+            Lamborghini
+        </div>
+        <div class="box2">
+            Class. Style. Speed.
+        </div>
+    </div>
+    <div class="logo">
+        <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-lamborghini-282390.png?f=webp" alt="logo">
+    </div>
+    <div class="footer">
+        Thank You for visiting the Website. <br>
+        &copy; Priyansh Verma
+    </div>
+</body>
+</html>
