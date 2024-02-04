@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&family=Noto+Sans:wght@900;500&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-red: rgb(229, 9, 20);
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/bg.jpg");
+    background-position: center center;
+    background-size: max(1300px, 100vw);
+    background-repeat: no-repeat;
+    height: 700px;
+    /* width: 100vw; */
+    position: relative;
+}
+
+.main .box {
+    height: 700px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 76vw;
+    margin: auto;
+    height: 90px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button, select {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 16px;
+    padding: 0px;
+}
+
+.hero > :first-child {
+    font-weight: 900;
+    /* width < 950px = font-size : 32px */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero > :nth-child(2) {
+    /* font-weight: 400; */
+    /* width < 950px = font-size : 18px */
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero > :nth-child(3) {
+    /* font-weight: 400; */
+    /* width < 950px = font-size : 18px */
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(35, 35, 35);
+}
+
+.btn {
+    padding: 4px 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    color: white;
+}
+
+#lang option {
+    color: black;
+    padding: 6px 36px;
+}
+
+#lang {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(16, 16, 16, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-red-si {
+    background-color: var(--color-red);
+    font-size: 14px;
+    border: 1px solid var(--color-red);
+    cursor: pointer;
+}
+
+.btn-red-gs {
+    background-color: var(--color-red);
+    color: white;
+    padding: 12px 24px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--color-red);
+    cursor: pointer;
+}
+
+.email {
+    padding: 16px 168px 16px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(16, 16, 16, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 24px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+    gap: 16px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.first-text p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 16px 0px 0px;
+}
+
+.tv-img {
+    position: relative;
+}
+
+.tv-img img {
+    height: 376px;    
+    z-index: 10;
+    /* width: 48vw; */
+    position: relative;
+}
+
+.tv-img video {
+    position: absolute;
+    height: 210px;
+    width: 376px;
+    right: 60px;
+    top: 72px;
+}
+
+.pc-img video {
+    width: 308px;
+    height: 172px;
+    right: 100px;
+    top: 32px;
+}
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    max-width: 76vw;
+    margin: auto;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.faq h2 {
+    padding-bottom: 16px;
+}
+
+.box-faq {
+    background-color: rgb(45, 45, 45);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+    padding: 24px;
+    width: 76vw;
+    border: 1px solid rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.box-faq:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.faq span {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.email-last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    gap: 24px;
+    padding-bottom: 72px;
+}
+
+footer {
+    padding: 48px;
+    color: rgb(179, 179, 179);
+    max-width: 76vw;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer a {
+    color: rgb(179, 179, 179);
+}
+
+footer span {
+    font-size: 16px;
+    color: rgb(179, 179, 179);
+}
+
+.footer span {
+    font-size: 14px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-bottom: 32px;
+}
+
+.footer-list {
+    padding-top: 24px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.footer-select {
+    width: 112px;
+}
+
+@media screen and (max-width: 960px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero > :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 18px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .first-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .get-started {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
