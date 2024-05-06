@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1a1c4e;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 48px;
+}
+
+header img, .header-left img {
+    height: 16px;
+    width: 16px;
+    padding: 0 4px;
+}
+
+header img, a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.header-right a span {
+    text-decoration: none;
+    color: white;
+}
+
+.header-right a span:hover {
+    color: orangered;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-image: url(../Assets/iiitkota.jpeg);
+    background-size: 100vw;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    padding: 10px 20px 10px 120px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    gap: 40px;
+}
+
+.menu span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+main {
+    
+    /* min-height: calc(100vh - 186px); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 0, 0.0); */
+    padding: 100px 80px 100px 0px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    height: 80px;
+    width: 360px;
+    background-color: rgba(50, 50, 200, .9);
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+aside > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #144e96;
+    padding: 8px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

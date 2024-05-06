@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review a Facility</title>
+    <link rel="shortcut icon" href="../Assets/iiitk-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="../Assets/home.png" alt="" />
+        <a href="https://www.facebook.com/IIITKotaOffice/">
+          <img src="../Assets/facebook.png" alt="" />
+        </a>
+        <a href="https://twitter.com/IIITKotaOffice">
+          <img src="../Assets/twitter.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/school/iiitkotaoffice">
+          <img src="../Assets/linkedin.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/iiitkotaoffice/">
+          <img src="../Assets/instagram.png" alt="" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCMvxTDPPnyuEPSGgjOv6HBQ">
+          <img src="../Assets/youtube.png" alt="" />
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="https://goo.gl/maps/KfBmHcSVKmzt3hvj7">
+          <img src="../Assets/location.png" alt="" />
+          <span>Location</span>
+        </a>
+      </div>
+    </header>
+    <nav>
+      <div class="logo">
+        <img src="../Assets/iiitk-logo.png" alt="" />
+      </div>
+      <div class="description">
+        <span>भारतीय सूचना प्रौद्योगिकी संस्थान कोटा </span>
+        <span>Indian Institute of Information Technology Kota</span>
+        <span
+          >(An Institute of National Importance under the Act of
+          Parliament)</span
+        >
+      </div>
+      <div class="menu">
+        <span>ABOUT US</span>
+        <span>REVIEWS</span>
+        <span>SUGGESTIONS</span>
+        <span>COMPLAINTS</span>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Review a Facility</h1>
+        <form action="connect.php" method="post">
+          <div class="left">
+            <div class="group">
+              <label for="selectCat">Select Facility</label>
+              <select name="selectCat" id="selectCat">
+                <option value=""></option>
+                <option value="Placements">Placements</option>
+                <option value="Mess">Mess</option>
+                <option value="Hostel">Hostel</option>
+                <option value="Network">Network</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Academics">Academics</option>
+                <option value="Campus">Campus Life</option>
+              </select>
+            </div>
+            <div class="group">
+              <label for="stars">Rate:</label>
+              <select name="stars" id="stars">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">SUBMIT</button>
+          </div>
+          <div class="right">
+            <div class="group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="firstName"
+              />
+            </div>
+            <div class="group">
+              <label for="lastName">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+              />
+            </div>
+            <div class="group">
+              <label for="email">College Email ID</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="group">
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value=""></option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Others</option>
+              </select>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">&copy; Priyansh Verma</div>
+      <div class="header-left">
+        <a href="https://www.facebook.com/IIITKotaOffice/">
+          <img src="../Assets/facebook.png" alt="" />
+        </a>
+        <a href="https://twitter.com/IIITKotaOffice">
+          <img src="../Assets/twitter.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/school/iiitkotaoffice">
+          <img src="../Assets/linkedin.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/iiitkotaoffice/">
+          <img src="../Assets/instagram.png" alt="" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCMvxTDPPnyuEPSGgjOv6HBQ">
+          <img src="../Assets/youtube.png" alt="" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
