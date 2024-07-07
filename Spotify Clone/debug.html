@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .seek {
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .progress {
+            position: absolute;
+            height: 100%;
+            background-color: #76c7c0;
+            width: 0;
+        }
+
+        .circle {
+            position: absolute;
+            top: -5px;
+            width: 10px;
+            height: 10px;
+            background-color: #76c7c0;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    <title>Seekbar Example</title>
+</head>
+<body>
+
+<div class="seek">
+    <div class="progress"></div>
+    <div class="circle"></div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".seek").addEventListener("click", e => {
+          const seek = e.currentTarget;
+          const seekRect = seek.getBoundingClientRect();
+          const clickPosition = e.clientX - seekRect.left;
+          const seekWidth = seekRect.width;
+          const percent = (clickPosition / seekWidth) * 100;
+          const newTime = (percent / 100) * currSong.duration;
+
+          currSong.currentTime = newTime;
+
+          document.querySelector(".progress").style.width = percent + "%";
+          document.querySelector(".circle").style.left = percent + "%";
+        });
+    });
+</script>
+
+</body>
+</html>

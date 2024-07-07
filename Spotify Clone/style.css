@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+
+body {
+    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    /* font-family: "Flow Circular", system-ui; */
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    /* height: 90vh; */
+    /* min-height: calc(100vh - 120px); */
+    /* max-height: calc(100vh - 120px); */
+}
+
+aside {
+    /* margin: 8px 4px 8px 8px; */
+    width: 24vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: calc(100vh - 90px);
+}
+
+.top-left {
+    background-color: #121212;
+    padding: 10px;
+    height: 132px;
+    border-radius: 10px;
+}
+
+.logo img {
+    height: 24px;
+    margin: 8px 8px 6px 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bottom-left {
+    background-color: #121212;
+    /* padding: 10px; */
+    border-radius: 10px;
+    position: relative;
+    height: calc(97vh - 132px);
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.your-library {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 1px solid #121212;
+}
+
+.songList {
+    display: flex;
+    flex-direction: column;
+    height: 36vh;
+    padding: 0px 10px 10px 0px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.songList ul {
+    padding: 8px;
+}
+
+.songList ul li {
+    /* list-style-type: decimal; */
+    /* list-style-position: outside; */
+    /* text-align: center; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    /* background-color: #000000; */
+    width: 98%;
+}
+
+.songList ul li:hover {
+    /* display: flex; */
+    /* flex-direction: row; */
+    background-color: #1a1a1a;
+    cursor: pointer;
+    
+}
+
+.song-description {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 4px;
+}
+
+
+.song-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.song-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.artist-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+.footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 10px 0px 10px;
+    height: 5vh;
+    gap: 10px;
+    font-size: 12px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.footer2 {
+    font-size: 14px;
+}
+
+.footer2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    /* margin: 8px 8px 8px 8px; */
+    background-color: #121212;
+    width: 74vw;
+    top: 0px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: calc(100vh - 90px);
+}
+
+.header {
+    /* background-color: #ff0000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px;
+}
+
+.navigation button {
+    background-color: #0a0a0a;
+    border: 1px solid #0a0a0a;
+    padding: 8px 8px 4px 8px; 
+    border-radius: 40px;
+}
+
+#sign-up {
+    background-color: #121212;
+    border: 1px solid #121212;
+    color: #aaaaaa;
+}
+
+
+.login button {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+}
+    
+#sign-up:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.login button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.spotifyPlaylists {
+    padding: 20px;
+    background-color: #222222;
+    /* overflow-x: scroll; */
+    /* scrollbar-width: none; */
+}
+
+.cardContainer {
+    display: flex;
+    padding: 20px 0px;
+    /* gap: 12px; */
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.card {
+    /* height: 200px; */
+    min-width: 170px;
+    max-width: 170px;
+    padding: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 8px;
+    position: relative;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.card h2 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.play {
+    width: 40px;
+    padding: 6px 7px 2px 5px;
+    background-color: #1edc64;
+    border-radius: 100px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+}
+
+.card:hover .play {
+    opacity: 1;
+    top: 45%;
+}
+
+.play:hover {
+    transform: scale(1.05);
+    background-color: #2eec74;
+    
+}
+
+footer {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* min-height: 10vh; */
+    height: 60px;
+    /* position: absolute; */
+    bottom: 0;
+    border-radius: 8px;
+    background-color: #000000;
+    width: calc(100vw - 20px);
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.song img {
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 8px;
+    /* margin-left: 4px; */
+}
+
+#curr-song {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    gap: 8px;
+}
+
+.playbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    width: 20px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+#play-button {
+    background-color: #ffffff;
+    display: flex;
+    padding: 8px;
+    width: 36px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-button:hover {
+    transform: scale(1.05);
+}
+
+.seek {
+    background-color: #4d4c4c;
+    height: 5px;
+    width: 34vw;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.circle {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    left: 0px;
+    align-items: center;
+    background-color: #ffffff;
+    opacity: 0;
+}
+
+.progress {
+    height: 5px;
+    width: 0%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.seek:hover .circle {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.seek:hover .progress {
+    background-color: #1cb955;
+}
+
+.seekbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+.options {
+    width: 28vw;
+}
+
+
+
+
+
