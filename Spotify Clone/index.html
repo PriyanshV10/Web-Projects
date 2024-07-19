@@ -10,11 +10,15 @@
       href="Assets/Spotify_icon.svg"
       type="image/x-icon"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
   </head>
   <body>
     <section>
       <aside>
         <div class="top-left">
+          <div class="close">
+            <img src="Assets/close.svg" height="24px" alt="">
+          </div>
           <div class="logo">
             <img src="Assets/Spotify_logo_with_text.svg" alt="" />
           </div>
@@ -88,6 +92,9 @@
       <main>
         <div class="header">
           <div class="navigation">
+            <button id="hamburger">
+              <img src="Assets/hamburger.svg" height="32px" width="32px" alt="">
+            </button>
             <button class="nav">
               <img
                 src="Assets/left-icon.svg"
@@ -246,7 +253,7 @@
           </div>
         </div>
         <div class="playbar">
-            <div class="buttons">
+            <div class="buttons for-laptop">
                 <button id="prev-button">
                     <img src="Assets/prev-button.svg" alt="">
                 </button>
@@ -265,8 +272,29 @@
                 </div>
                 <div id="total-time">0:00</div>
             </div>
+            <div class="buttons for-phone">
+              <button id="prev-button">
+                  <img src="Assets/prev-button.svg" alt="">
+              </button>
+              <button id="play-button">
+                  <img src="Assets/play-button.svg" alt="">
+              </button>
+              <button id="next-button">
+                  <img src="Assets/next-button.svg" alt="">
+              </button>
+          </div>
         </div>
-        <div class="options"></div>
+        <div class="options">
+          <button class="volume-button">
+            <img src="Assets/volume-on.svg" height="16px" alt="">
+          </button>
+          <div class="seekbar">
+              <div class="volume">
+                  <div class="volume-circle"></div>
+                  <div class="volume-progress"></div>
+              </div>
+          </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
